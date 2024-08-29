@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FDD4C1;
+            text-align: center;
+        }
+        
+        .card {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #F9EBB2;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .message {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #573A70;
+        }
+        
+        .signature {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3D314A;
+        }
+        
+        .confetti {
+            position: relative;
+            overflow: hidden;
+            height: 150px;
+        }
+        
+        .confetti:before,
+        .confetti:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #E54848;
+            border-radius: 50%;
+        }
+        
+        .confetti:before {
+            left: 25%;
+        }
+        
+        .confetti:after {
+            right: 25%;
+        }
+        
+        .confetti .dot {
+            animation: confetti-fall 1s linear infinite;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1 style="color: #C33C54;">Happy 19th Birthday!</h1>
+        <div class="message">
+            <p>Dear [Friend's Name],</p>
+            <img src="path/to/your-image1.jpg" alt="Image 1" style="max-width: 100%; border-radius: 10px; margin-bottom: 10px;">
+            <p>Wishing you a fantastic 19th birthday! May this special day be filled with love, laughter, and all the things that make you smile. You're not just a friend; you're family to me.</p>
+            <img src="path/to/your-image2.jpg" alt="Image 2" style="max-width: 100%; border-radius: 10px; margin-bottom: 10px;">
+            <p>As you turn 19 and step into this new chapter of your life, I want you to know how proud I am of the person you've become. Your kindness, strength, and determination inspire me every day.</p>
+            <!-- Add more lovely images and personalize the message further -->
+        </div>
+        <div class="signature" style="color: #3D314A;">Lots of love,</div>
+        <div class="signature" style="color: #3D314A;">[Your Name]</div>
+        <div class="confetti">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+
+</html>

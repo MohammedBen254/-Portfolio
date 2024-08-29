@@ -1,0 +1,391 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+var {
+    --firstcolor: black;
+    --secondcolor: rgb(120, 55, 80);
+    --firstbg: rgb(228, 233, 243);
+    --secondbg: rgb(146, 159, 185);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--firstcolor);
+    background-color: black;
+}
+
+nav {
+    position: fixed;
+}
+
+nav h3 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: beige;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin-left: 2%; */
+    /* background-color: b; */
+}
+
+nav h3 #nom {
+    color: rgb(255, 30, 0);
+}
+
+a {
+    color: black;
+    padding: 10px 6px;
+    text-decoration: none;
+    transition: ease 0.3s;
+    border-bottom: 3px solid dark;
+}
+
+li a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+
+.top {
+    height: 70px;
+}
+
+.home {
+    display: flex;
+    /* justify-content: center; */
+    background-image: url('./img/brand-black.png');
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.home h3 {
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.home .para {
+    width: 400px;
+    backdrop-filter: blur(5px);
+    /* color: white; */
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.skills h3 {
+    /* position: absolute; */
+    /* float: left; */
+    margin-top: 10px;
+    margin-left: 15px;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    padding: 20px;
+}
+
+.skills .content {
+    margin-top: 30px;
+    /* justify-content: center; */
+}
+
+.skills ul {
+    width: 320px;
+    margin-left: 50px;
+    /* display: flex; */
+}
+
+.skills li {
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.skills img {
+    position: relative;
+    /* top: 10px; */
+    /* margin-left: 00px; */
+    /* right: 25px; */
+    float: right;
+}
+
+.formation{padding: 30px;background-color: rgb(241, 241, 241);}
+
+/* .formation_online {
+
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+
+ */
+.formation .card, .formation_online .card {
+    transition: all 0.3s;
+    /* margin: 10px; */
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.formation h3, .formation_online h3 {
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.formation .card-body, .formation_online .card-body {
+    /* padding: 10px; */
+    /* margin: 10px; */
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    /* text-align: center; */
+}
+
+.formation .card:hover , .formation_online .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 0px blue;
+    transition: ease 0.4s;
+}
+
+.formation .card-body h4, .formation_online.card-body h4 {
+    color: rgb(0, 0, 197);
+    padding: 8px;
+    font-weight: bolder;
+    font-size: 26px;
+    /* display: flex; */
+}
+.formation_online{
+    padding: 30px;
+}
+.formation_online .card{
+    height: 400px;
+}
+.formation_online .card h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.formation_online .card p{
+    font-size: 14px;
+    height: 100px;
+}
+.formation_online img{
+    width: 150px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.experiences {
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+}
+
+.experiences h3 {
+    font-weight: bolder;
+    color: rgb(70, 70, 70);
+    padding: 20px;
+}
+
+.experiences .row {
+    margin-top: 8px;
+}
+
+.experiences .card {
+    padding: 30px;
+    margin-top: 5px;
+    height: 35  0px;
+    transition: all 0.3s;
+}
+
+.experiences .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px 0 blue;
+}
+
+.experiences h4 {
+    font-weight: bolder;
+    color: blue;
+    font-size: 25px;
+}
+
+.contact {
+    margin: 5px;
+    padding: 30px;
+}
+.contact h3{
+    font-weight: bolder;
+    color: rgb(70, 70, 70);padding: 20px;}
+.contact .card h4 {
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.contact .card {
+    transition: all 0.3s;
+    padding: 5px;
+    height: 250px;
+}
+
+.contact .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px 0 blue;
+}
+
+.contact .card a {
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.contact .card a:hover {
+    background-color: red;
+    text-decoration: none;
+    transform: scale(1.02);
+}
+
+footer {
+    padding: 20px;
+}
+
+footer h3 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+    width: 310px;
+    margin-top: 5px;
+    background-color: beige;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin-left: 2%; */
+    /* background-color: b; */
+}
+
+footer h3 #nom {
+    color: rgb(255, 30, 0);
+}
+
+footer ul {
+    float: right;
+    position: relative;
+    bottom: 30px;
+}
+
+footer a:hover {
+    border: none;
+}
+
+footer #p {
+    color: white;
+}
+.social-media{
+    float: right;
+    right: 5px;
+}
+footer img{
+    margin: 5px;
+}
+@media (max-width: 820px) {
+    body{padding: 10px;}
+    nav h3 {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        padding: 3px;
+        font-size: 18px;
+        margin-top: 4px;
+        background-color: beige;
+        border-radius: 5px;
+        cursor: pointer;
+        /* margin-left: 2%; */
+        /* background-color: b; */
+    }
+    a {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+    .home {
+        background-image: url('./img/red-wal.png');
+        height: auto;
+    }
+    .home h3 {
+        color: rgb(70, 70, 70);
+    }
+    .home .para {
+        font-size: 12px;
+        width: 210px;
+        backdrop-filter: none;
+    }
+    .skills .content {
+        flex-direction: column;
+        /* Stack the image below the list items */
+        align-items: center;
+        /* Center the items in the column */
+    }
+    .skills ul {
+        margin-left: 0;
+        /* Remove the left margin for the list items */
+        text-align: center;
+        /* Center the list items */
+    }
+    .skills li {
+        margin: 5px 0;
+        /* Add some vertical spacing between the list items */
+    }
+    .skills img {
+        margin-top: 20px;
+        /* Add some space between the list items and the image */
+        height: auto;
+        /* Allow the image to resize based on the screen width */
+    }
+    nav ul {
+        /* display: none; */
+        font-size: 12px;
+        /* Hide the navbar links */
+    }
+    /* Show the navbar links in a vertical list when the "hamburger" icon is clicked */
+    nav ul.show {
+        display: block;
+        position: absolute;
+        top: 50px;
+        /* Adjust the top position based on your header height */
+        left: 0;
+        background-color: #333;
+        /* Change the background color as per your theme */
+        width: 100%;
+    }
+    nav ul.show li {
+        display: block;
+        list-style-type: square;
+        padding: 10px;
+    }
+    .card-body {
+        width: 200px;
+    }
+    .text-mail {
+        font-size: 11px;
+    }
+    .contact p {
+        font-size: 11px;
+    }
+    footer img {
+        width: 40px;
+    }
+}

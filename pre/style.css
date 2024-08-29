@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(249, 250, 227);
+    color: rgb(0, 0, 0);
+    padding: 2px;
+}
+
+
+nav{
+    height: 10vh;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    /* position: fixed; */
+    /* justify-content: center; */
+}
+nav h2{
+    color: rgb(0, 149, 255);
+    font-weight: bold;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2%;
+    /* background-color: rgb(60, 0, 255); */
+}
+nav h2 #nom{
+    color: rgb(255, 30, 0);
+}
+nav ul {
+    float: right;
+    margin-right: 1%;
+    text-align: center;
+    margin-left: 30%;
+}
+    
+
+nav ul li{
+    display: inline;
+    position: relative;
+    margin: 15px;
+    /* float: right; */
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 6px 15px;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: red;
+    color:black;
+    transition: ease-in-out 0.4s;
+}
+
+#home{
+    height: 70vh;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    background-image: url("red-wal.png");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 100%;
+    text-align: center;
+    /* padding: 15px; */
+    display: flex;
+    /* flex-direction: row; */
+}
+#home img {
+    position: absolute;
+    margin-top: 1%;
+    left: 7%;
+}
+#home h1{
+    /* float: left; */
+    width: 44%;
+    padding-top: 1%;
+    margin-left: 25%;
+    /* text-align: center; */
+}
+#moreinfo{
+margin-left: 20%;
+    width: 70%;
+    margin-top: 2%;
+    text-align: left;
+    /* margin-right: 25%; */
+    height: 55%;
+    float: left;
+    left: 0;
+    position: absolute;
+}
+
+
+#info{
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+#moreinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#skills{
+    height: 60vh;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+#skills h1{
+    /* position: relative; */
+    /* margin: 4%; */
+    text-align: center;
+}
+#competence{
+margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    float: left;
+    margin-left: 10%;
+    backdrop-filter: blur(5px);
+  
+}
+
+
+.blur {
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+  }
+  
+#skills ul{
+    margin-left: 5%;
+}
+#skills ul li {
+    margin: 4% 10%;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    padding: 2% 8%;
+    font-size: 15px;
+}
+h1{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#formation{
+    height: 60vh;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.formation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#formation #bac{
+    width: 35vw;
+    height: 20%;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 15px;
+    padding: 35px 15px;
+    display: block;
+    
+    margin-right: 2%;
+    /* height:; */
+    margin-top: 2%;
+}
+#formation #bac  #pbac{
+    letter-spacing: 1.2;
+    line-height: 25px;
+    display: none;
+    transition: 0.3s;
+    margin-left: 35px;
+    padding-bottom: 30px;
+}
+#formation #dut  #pdut{
+    letter-spacing: 1.2;
+    line-height: 25px;
+    display: none;
+    transition: 0.4s;
+    margin-left: 35px;
+    padding-bottom: 30px;
+}
+#formation #bac #bh1{
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#formation #bac:hover{
+    height: 40%;
+    transition: ease-in-out 0.4s;
+    transform: scale(1.04);
+    
+}
+#formation #dut{
+    margin-top: 2%;
+    width: 35vw;
+    height: 20%;
+    box-shadow: 0 0 15px blue;
+    border-radius: 15px;
+    padding: 35px 15px;
+    margin-left: 2%;
+    display:block;
+}
+
+#formation #dut #dh1{
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#formation #dut:hover{
+    transition: ease-in-out 0.4s;
+    transform: scale(1.04);
+    height: 40%;
+    
+}
+
+#enligne{
+    width: 100vw;
+    height: 60vh;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    
+    text-align: center;
+}
+#enligne  h1{
+    padding-bottom: 20px;
+    padding: 20px ;
+}
+#enligne #online{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    float: left;
+    padding-top: 5%;
+    text-align: left;
+    margin-left: 50px;
+}   
+#enligne #online #ul{
+    list-style-type: square;
+}
+#enligne #online ul li{
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+#projets{
+    height: 60vh;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+#projets #h1{
+    color: beige;
+}
+#projets #projet {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90%;
+   width: 100%;
+}
+
+#projets #projet #projet1{
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 blue;
+    display: flex;
+    height: 55%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#projet1:hover{
+    transform: scale(1.04);
+    transition: ease-in-out 0.4s;
+    box-shadow: 0 0 15px red;
+}
+
+#contact{
+    height: 60vh;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+#contact #contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+#contact ul{
+    list-style-type: none;
+
+}
+#contact ul li {
+    display: inline;
+    width: 18%;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 35px 50px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid blue;
+}
+#contact ul #fb:hover {
+    background-color: blue;
+    transition: ease-in-out 0.4s;
+    transform: scale(1.01);
+    padding: 50px 0px;
+}
+#what{
+    border: 3px solid rgb(0, 211, 42);
+}
+#fb{
+    border: 3px solid blue;
+}
+#insta{
+    border: 3px solid rgb(179, 0, 179);
+}
+#linkedIn{
+    border: 3px solid rgb(0, 140, 255);
+}
+#mail{
+    border: 3px solid rgb(255, 34, 34);
+}
+#contact ul #what:hover {
+    background-color: rgb(0, 211, 42);
+    border: 2px solid rgb(0, 211, 42);
+    transition: ease-in-out 0.4s;
+    padding: 50px 50px;
+    transform: scale(1.2);
+}
+
+#contact ul #insta:hover {
+    background-color:rgb(179, 0, 179);
+    transform: scale(1.05);
+    padding: 50px 50px;
+    border: 2px solid rgb(179, 0, 179);
+    transition: ease-in-out 0.4s;
+}
+
+#contact ul #mail:hover {
+    background-color: rgb(255, 34, 34);
+    border: 2px solid rgb(255, 34, 34);
+    padding: 50px 50px;
+    transition: ease-in-out 0.4s;
+    transform: scale(1.05);
+}
+
+#contact ul #LinkedIn:hover {
+    background-color: rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+    transition: ease-in-out 0.4s;
+    padding: 50px 50px;
+}
+
+#contact ul li a{
+    padding: 35px 50px;
+    
+}
+#contact ul li a:hover{
+    transform: scale(1.1);
+    
+}
+
+
+#comment{
+    height: 60vh;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+#comment form{
+    box-shadow: 0 0 10px 0 blue;
+    width: 70%;
+    padding: 3% 5%;
+    border-radius: 10px;
+}
+#comment input{
+    width: 85%;
+    height: 5vh;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    outline: none;
+    font-size: 17px;
+    border: none;
+    border-bottom:2.2px solid red;
+    margin: 8px 5px;
+    border-radius: 10px;
+    text-align: center  ;
+}
+#comment input:hover{
+    border-bottom: 2.2px solid green;
+    border-radius: 10px;
+}
+
+#comment input[type="submit"]{
+    width: 30%;
+    height: 20%;
+    background-color: blue;
+    border-radius: 10px;
+    border-bottom: none;
+    font-weight: bold;
+    
+}
+#comment input[type="submit"]:hover{
+    background-color: rgb(0, 140, 255);
+    transition: ease 0.4s;
+    transform: scale(1.05);
+}
+#top{
+    border-radius: 50%;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px 0 darkgray;
+    float: right;
+    position: fixed;
+}
+
+footer{
+    height: 10%;
+    display: flex;
+    text-align: center;
+}
+footer #foot{
+    margin: 1.5%;
+
+}
+footer h2{
+    color: rgb(0, 149, 255);
+    font-weight: bold;
+    padding: 10px;
+    background-color: beige;
+    margin: 1.5%;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    /* background-color: rgb(60, 0, 255); */
+}
+footer h2 #nom{
+    color: rgb(255, 30, 0);
+}
+footer ul {
+    float: right;
+    margin-right: 20px;
+    /* display: inline; */
+    
+}
+footer ul li{
+    display: inline;
+    padding: 2%;
+    
+}
+#year{
+    margin-top: 2.5%;
+}
+
+
+
+@media screen and (max-width: 568px) {
+    /* styles for screens up to 768px wide */
+    nav {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    nav h2 {
+      margin-left: 0;
+      padding: 8px;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    nav ul {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    nav ul li{
+    font-size: 12px;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+    
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 4px;
+    border-radius: 10px;
+}
+
+/*accueil part of wesbsite */
+    #home {
+      height: auto;
+      height: 60vh;
+      background-attachment: local;
+      background-clip: padding-box;
+      background-position: 70%;
+      font-size: 13px;
+      
+    }
+    
+    #home img {
+      /* position: relative; */
+      margin-top: 0;
+      margin-bottom: 10px;
+      left: 0;display: none;
+    }
+    
+    #home h1 {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #moreinfo {
+        margin-left: 20px;
+        margin-top: 55px;
+        width: 80%;
+        backdrop-filter: blur(8px);
+        height: auto;
+    }
+    #formation{
+        height: 60vh;
+        padding: 15px;
+        display: flex;
+        text-align: center;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+    .formation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #formation #bac{
+        width: 35vw;
+        height: 20%;
+        box-shadow: 0 0 15px aqua;
+        border-radius: 15px;
+        padding: 35px 15px;
+        display: block;
+        
+        margin-right: 2%;
+        /* height:; */
+        margin-top: 2%;
+    }
+    #formation #bac  #pbac{
+        letter-spacing: 1.2;
+        line-height: 25px;
+        display: none;
+        transition: 0.3s;
+        margin-left: 35px;
+        padding-bottom: 30px;
+    }
+    #formation #dut  #pdut{
+        letter-spacing: 1.2;
+        line-height: 25px;
+        display: none;
+        transition: 0.4s;
+        margin-left: 35px;
+        padding-bottom: 30px;
+    }
+    #formation #bac #bh1{
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #formation #bac:hover{
+        height: 40%;
+        transition: ease-in-out 0.4s;
+        transform: scale(1.04);
+        
+    }
+    #formation #dut{
+        margin-top: 2%;
+        width: 35vw;
+        height: 20%;
+        box-shadow: 0 0 15px blue;
+        border-radius: 15px;
+        padding: 35px 15px;
+        margin-left: 2%;
+        display:block;
+    }
+    
+    #formation #dut #dh1{
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #formation #dut:hover{
+        transition: ease-in-out 0.4s;
+        transform: scale(1.04);
+        height: 40%;
+        
+    }
+    #contact{
+        display: block;
+    }
+    #contact ul{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-grow: inherit; */
+        /* flex: content; */
+        /* text-align: center; */
+        width: 100%;
+        
+    }
+    #contact ul li{
+        padding: 15px 15px;
+        margin: 5px;
+        width: 28%;
+        
+        flex-basis: calc(50% -10px);
+        
+    }
+    #contact ul li:last-child{
+        flex-basis: 100%;
+    }
+    
+#contact ul #fb:hover {
+    background-color: blue;
+    transition: ease-in-out 0.4s;
+    transform: scale(1.02);
+}
+#what{
+    border: 3px solid rgb(0, 211, 42);
+}
+#fb{
+    border: 3px solid blue;
+}
+#insta{
+    border: 3px solid rgb(179, 0, 179);
+}
+#linkedIn{
+    border: 3px solid rgb(0, 140, 255);
+}
+#mail{
+    border: 3px solid rgb(255, 34, 34);
+}
+#contact ul #what:hover {
+    background-color: rgb(0, 211, 42);
+    border: 2px solid rgb(0, 211, 42);
+    transition: ease-in-out 0.4s;
+    transform: scale(1.02);
+}
+
+#contact ul #insta:hover {
+    background-color:rgb(179, 0, 179);
+    transform: scale(1.02);
+    border: 2px solid rgb(179, 0, 179);
+    transition: ease-in-out 0.4s;
+}
+
+#contact ul #mail:hover {
+    background-color: rgb(255, 34, 34);
+    border: 2px solid rgb(255, 34, 34);
+    transition: ease-in-out 0.4s;
+    /* transform: scale(1.02); */
+}
+
+#contact ul #LinkedIn:hover {
+    background-color: rgb(0, 140, 255);
+    border: 2px solid rgb(0, 140, 255);
+    transition: ease-in-out 0.4s;
+    transform: scale(1.02);
+}
+    
+#contact ul li a{
+    padding: 15px 15px;
+    
+}
+  }

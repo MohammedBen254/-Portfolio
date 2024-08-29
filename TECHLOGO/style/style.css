@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+var {
+    --firstcolor: black;
+    --secondcolor: blue;
+    --thirthcolor: darkgray;
+}
+
+body {
+    color: var(--firstcolor);
+    background-color: white;
+    font-size: 13px;
+}
+
+a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+nav {
+    box-shadow: 0 0 5px 0 grey;
+}
+
+nav h6 span {
+    font-weight: bolder;
+}
+
+nav i {
+    color: white;
+    background-color: blue;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+nav .social img {
+    width: 40px;
+}
+
+.home {
+    padding: 50px;
+    background-image: url('../images/istockphoto-1323167372-612x612.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    color: black;
+    /* width: 100vw; */
+}
+
+.home .text {
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    position: relative;
+    /* opacity: 1; */
+    /* backdrop-filter: blur(5px); */
+}
+
+.home .content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.7;
+    /* Adjust opacity as needed */
+}
+
+.home #item {
+    font-weight: bold;
+}
+
+.brr-30 {
+    border-radius: 50px;
+}
+
+.ideas {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas .info {
+    margin-top: 15px;
+    width: 420px;
+}
+
+.ideas img {
+    position: relative;
+    margin-left: 50px;
+}
+
+.services {
+    background-color: rgb(241, 241, 241);
+    padding: 50px;
+}
+
+.more {
+    padding: 50px;
+}
+
+.more .info {
+    padding: 10px;
+}
+
+.more .info ul li {
+    padding: 15px;
+    width: 350px;
+    margin: 10px;
+}
+
+i {
+    margin-bottom: 4px;
+}
+
+.more .info ul li:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.more .info ul li:hover>ul {
+    display: block;
+}
+
+.softwar {
+    padding: 50px;
+    background-image: url('../images/istockphoto-1146472948-612x612.jpg');
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.softwar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    /* Adjust opacity as needed */
+}
+
+.comments {
+    padding: 50px;
+    background-color: rgb(241, 241, 241);
+}
+
+.comments img {
+    margin-top: 15px;
+}
+
+.best-plans {
+    padding: 40px;
+}
+
+.best-plans .card-body {
+    background-color: rgb(246, 246, 246);
+}
+
+.suggest {
+    padding: 50px;
+    background-image: url('../images/two-poeple.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    color: white;
+    /* line-height: 21px; */
+}
+
+.suggest::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    /* Adjust opacity as needed */
+}
+
+.suggest h2 {
+    color: white;
+    opacity: 1;
+    background-color: transparent;
+}
+
+.client {
+    padding: 50px;
+}
+
+.client h4 {
+    margin-bottom: 40px;
+}
+
+.client .card {
+    padding: 40px 0 40px 0;
+    text-align: center;
+    margin: 8px 0;
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+.contact {
+    padding: 50px;
+    background-color: rgb(241, 241, 241);
+}
+
+.card {
+    border: none;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0 8px 0 aqua;
+    transform: scale(1.07);
+}
+
+.back {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
